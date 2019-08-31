@@ -10,11 +10,11 @@ import io.netty.handler.codec.http.HttpResponse;
 public class NettyClientInboundHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-     /*   if (msg instanceof HttpResponse)
+        if (msg instanceof HttpResponse)
         {
             HttpResponse response = (HttpResponse) msg;
             System.out.println("CONTENT_TYPE:" + response.headers().get(HttpHeaders.Names.CONTENT_TYPE));
-        }*/
+        }
         if(msg instanceof HttpContent)
         {
             HttpContent content = (HttpContent)msg;
