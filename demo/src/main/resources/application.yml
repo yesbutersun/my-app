@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+
+mySelf:
+  name: yesbuter
+  age: 28
+
+spring:
+  profiles:
+    active: dev
