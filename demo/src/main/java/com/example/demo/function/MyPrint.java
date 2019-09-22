@@ -6,8 +6,9 @@ public class MyPrint {
 
     public String name ;
 
-    public final <T> void myPrint(T... t) {
-        Arrays.stream(t).forEach(item -> System.out.println(item));
+    @SafeVarargs
+    final <T> void myPrint(T... t) {
+        Arrays.stream(t).forEach(System.out::println);
 
     }
 }
