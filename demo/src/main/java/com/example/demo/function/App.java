@@ -1,10 +1,5 @@
 package com.example.demo.function;
 
-import org.springframework.http.converter.json.GsonBuilderUtils;
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Arrays;
-
 public class App {
     public static void main(String[] args) {
 

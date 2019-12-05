@@ -15,7 +15,7 @@ public class SpringDemoInvokeApplicationTests {
     AccountService accountService;
     @Test
     public void contextLoads() {
-        accountService.SearchAccount();
+        accountService.searchAccount();
     }
 
 }

@@ -1,0 +1,26 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: yesbuter-gateway
+
+
+#zuul:
+#  routes:
+#    blog:
+#      path: /yesbuter/**
+#      url: http://www.baidu.com
+
+
+zuul:
+  routes:
+    api:
+        path: /**
+        serviceId: YESBUTER-BACKEND
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8024/eureka/
