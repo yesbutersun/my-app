@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class Logger {
 
-     @Pointcut("execution(public String com.yesbuter.demo.service.impl.AccountServiceImpl.searchAccount())")
+     @Pointcut("execution(public String com.yesbuter.demo.service.impl.AccountServiceImpl.searchAccountById())")
     private void accountServicePointCut() {
 
     }

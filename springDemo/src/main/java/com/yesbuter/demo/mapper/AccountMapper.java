@@ -1,4 +1,11 @@
 package com.yesbuter.demo.mapper;
 
-public class AccountMapper {
+import com.yesbuter.demo.vo.Account;
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public interface AccountMapper {
+
+    Account selectAccountById();
 }

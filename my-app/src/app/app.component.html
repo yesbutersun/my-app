@@ -1,1 +1,8 @@
 <div>hello Angular</div>
+<form [formGroup]="searchForm">
+  <button (click)="myClick()">syh</button>
+  <span>{{'app-' + this.value}}</span>
+  <app-my-demo formControlName="test"></app-my-demo>
+  <span>{{'this.searchForm.controls.test.value-' + this.searchForm.controls.test.value}}</span>
+</form>
+
